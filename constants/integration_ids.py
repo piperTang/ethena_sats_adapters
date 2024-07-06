@@ -41,6 +41,16 @@ class IntegrationID(Enum):
     PENPIE_Zircuit_USDe27JUN2024_LPT= ('PENPIE_Zircuit_USDe27JUN2024_effective_lpt_held', 'Zircuit_USDe27JUN2024')
     PENPIE_ENA29AUG2024_LPT= ('PENPIE_ENA29AUG2024_effective_lpt_held', 'ENA29AUG2024', Token.ENA)
     PENPIE_USDE_ARB_AUG2024_LPT= ('PENPIE_USDE_ARB_AUG2024_effective_lpt_held', 'USDE_ARB_AUG2024', Token.USDE)
+
+    # EQUILIBRIA
+    EQUILIBRIA_SUSDE_SEPT_LPT = ('equilibria_susde_sept_effective_lpt_held', 'Equilibria sUSDe Sept LPT', Token.SUSDE)
+    EQUILIBRIA_Karak_SUSDE_SEPT_SEPT = ('equilibria_karak_susde_sept_effective_lpt_held', 'Equilibria Karak sUSDe Sept LPT', Token.SUSDE)
+    EQUILIBRIA_Karak_USDE_SEPT_LPT = ('equilibria_karak_usde_sept_effective_lpt_held', 'Equilibria Karak USDe Sept LPT', Token.USDE)
+    EQUILIBRIA_Zircuit_USDE_AUG_LPT = ('equilibria_zircuit_usde_aug_effective_lpt_held', 'Equilibria Zircuit USDe Aug LPT', Token.USDE)
+    EQUILIBRIA_rUSDE_SEPT_LPT = ('equilibria_rusde_sept_effective_lpt_held', 'Equilibria rUSDe Sept LPT')
+    EQUILIBRIA_USDE_LPT_EXPIRY = ('equilibria_usde_lpt_expiry_effective_lpt_held', 'Equilibria USDe LPT Expiry', Token.USDE)
+    EQUILIBRIA_SUSDE_APR_EXPIRY = ('equilibria_susde_apr_expiry_effective_lpt_held', 'Equilibria sUSDe Apr Expiry', Token.SUSDE)
+
     
 
     def __init__(self, column_name: str, description: str, token: Token = Token.USDE):
